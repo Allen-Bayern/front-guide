@@ -9,9 +9,9 @@
     <title>月饼的前端导航</title>
 </head>
 <body>
-    <nav>
+    <nav class="navi">
         <h2>只给你想要的</h2>
-        <ul>
+        <ul class="">
             <li><a href="https://www.pku.edu.cn">北京大学</a></li>
             <li>前端框架</li>
             <li>常用的库</li>
@@ -23,9 +23,10 @@
     <div id="weather">天气</div>
 
     <header class="globalHeader">
-        <form action="https://www.bing.com/search?=" 
-        class="searchForm">
-        
+        <!--搜索框-->
+        <form action="https://cn.bing.com/search?q=" method="get" target="_blank" class="super-search-fm">
+            <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei="" placeholder="微软Bing搜索" style="outline:0" autocomplete="off">
+            <button type="submit">Search</button>
         </form>
     </header>
 
@@ -35,9 +36,6 @@
             src="src/img/vue.png"
             alt="赵月饼的博客">
         </a>
-
-        <!--搜索框-->
-        <input type="text" id="search">
 
         <div class="guideNets">
             占位
