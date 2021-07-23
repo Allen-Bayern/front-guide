@@ -28,3 +28,7 @@ Temporary Items
 
 # Axure design file
 ui-design.rp
+
+# parcel
+.cache
+dist
