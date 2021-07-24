@@ -59,7 +59,7 @@ table {
 body{
     display: grid;
     background-color: #eee;
-    grid-template-columns: 25% 50% 25%;
+    grid-template-columns: 25% 60% 15%;
 }
 
 .naviWrapper{
@@ -86,4 +86,9 @@ body{
         background-color: #eee;
         grid-template-columns: 10% 80% 10%;
     }
+}
+
+/*修改图标*/
+#openGuide{
+
 }
