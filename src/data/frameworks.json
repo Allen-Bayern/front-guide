@@ -1,0 +1,20 @@
+{
+    "sites": [
+        {
+            "name": "jQuery",
+            "url": "https://jquery.com/"
+        },
+        {
+            "name": "Angular",
+            "url": "https://angular.io/"
+        },
+        {
+            "name": "React",
+            "url": "https://reactjs.org/"
+        },
+        {
+            "name": "Vue",
+            "url": "https://cn.vuejs.org/"
+        }
+    ]
+}

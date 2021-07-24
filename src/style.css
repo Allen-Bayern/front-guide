@@ -59,11 +59,16 @@ table {
 body{
     display: grid;
     background-color: #eee;
-    grid-template-columns: 25% 60% 15%;
+    grid-template-rows: 33.33% 33.33% 33.33%;
+    grid-template-columns: 30% 60% 10%;
+    height : auto;
 }
 
 .naviWrapper{
     border : 1px solid red;
+    grid-auto-flow: column;
+    grid-column : 1 / 2;
+    grid-row: 1 / 4;
 }
 
 .midWraper{
@@ -74,21 +79,53 @@ body{
     border: 1px solid red;
 }
 
+.navi{
+    font-size : 1.5em;
+}
+
 /*左侧边导航栏默认不显示，用jQuery控制其显示与否*/
 .navi{
     display : none;
 }
 
-/*适应手机*/
+/*修改图标*/
+#openGuide{
+    font-size: 3em;
+}
+
+#backTo{
+    font-size: 2em;
+}
+
+.myLogo{
+    width : 100px;
+    height : 100px;
+}
+
+.naviH2{
+    font-size : 2em;
+}
+
+/*手机电脑分割线*/
+
+/*适应手机，放最后写*/
 @media (max-width : 500px) {
     body{
         display: grid;
         background-color: #eee;
         grid-template-columns: 10% 80% 10%;
+        height : auto;
     }
-}
 
-/*修改图标*/
-#openGuide{
+    #openGuide{
+        font-size: 2em;
+    }
 
+    #backTo{
+        font-size: 2em;
+    }
+
+    .naviH2{
+        font-size : 1em;
+    }
 }
