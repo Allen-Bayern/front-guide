@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hans">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,50 +8,58 @@
     <title>月饼的前端导航</title>
 </head>
 <body>
-    <svg class="icon" aria-hidden="true">
-        <use xlink:href="#icon-myguide"></use>
-    </svg>
+    <div class="naviWrapper">
+        <svg class="icon" id="openGuide" aria-hidden="true">
+            <use xlink:href="#icon-myguide"></use>
+        </svg>
+    
+        <nav class="navi">
+            <h2>只给你想要的</h2>
+            <ul class="">
+                <li><a href="https://www.pku.edu.cn">北京大学</a></li>
+                <li>前端框架</li>
+                <li>常用的库</li>
+                <li>前端学习网站</li>
+                <li>Python学习网站</li>
+            </ul>
+            <svg class="icon" id="backTo" aria-hidden="true">
+                <use xlink:href="#icon-huitui"></use>
+            </svg>
+        </nav>
+    </div>
 
-    <nav class="navi">
-        <h2>只给你想要的</h2>
-        <ul class="">
-            <li><a href="https://www.pku.edu.cn">北京大学</a></li>
-            <li>前端框架</li>
-            <li>常用的库</li>
-            <li>前端学习网站</li>
-            <li>Python学习网站</li>
-        </ul>
-    </nav>
-
-    <div id="weather">天气</div>
-
-    <header class="globalHeader">
-        <!--搜索框-->
-        <form action="https://cn.bing.com/search?q=" method="get" target="_blank" class="super-search-fm">
-            <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei="" placeholder="微软Bing搜索" style="outline:0" autocomplete="off">
-            <button type="submit">Search</button>
-        </form>
-    </header>
-
-    <main>
-        <a href="https://juejin.cn/user/483440848286439">
-            <img
-            src="src/img/vue.png"
-            alt="赵月饼的博客">
-        </a>
-
-        <div class="guideNets">
-            占位
-        </div>
-    </main>
-
-
+    <div class="midWrapper">
+        <header class="globalHeader">
+            <a href="https://juejin.cn/user/483440848286439">
+                <img
+                src="src/img/vue.png"
+                alt="赵月饼的博客">
+            </a>
+            <!--搜索框-->
+            <form action="https://cn.bing.com/search?q=" method="get" target="_blank" class="super-search-fm">
+                <input type="text" id="search-text" class="form-control smart-tips search-key" zhannei="" placeholder="微软Bing搜索" style="outline:0" autocomplete="off">
+                <button type="submit">Search</button>
+            </form>
+        </header>
+    
+        <main>
+            <div class="guideNets">
+                占位
+            </div>
+        </main>
+    </div>
+    
+    <div class="rightWrapper">
+        <div id="weather">天气</div>
+    </div>
+    
+    </div>
 
     <!--引入jQyery-->
     <script
     src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js">
     </script>
-    <script src="//at.alicdn.com/t/font_2697173_rrl3gawi6il.js"></script>
+    <script src="//at.alicdn.com/t/font_2697173_k30c2q38vwe.js"></script>
     <script src="src/main.js"></script>
 </body>
 </html>

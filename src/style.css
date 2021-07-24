@@ -53,4 +53,37 @@ table {
     vertical-align: -0.15em;
     fill: currentColor;
     overflow: hidden;
- }
+}
+
+/*全面使用grid布局*/
+body{
+    display: grid;
+    background-color: #eee;
+    grid-template-columns: 25% 50% 25%;
+}
+
+.naviWrapper{
+    border : 1px solid red;
+}
+
+.midWraper{
+    border : 1px solid red;
+}
+
+.rightWrapper{
+    border: 1px solid red;
+}
+
+/*左侧边导航栏默认不显示，用jQuery控制其显示与否*/
+.navi{
+    display : none;
+}
+
+/*适应手机*/
+@media (max-width : 500px) {
+    body{
+        display: grid;
+        background-color: #eee;
+        grid-template-columns: 10% 80% 10%;
+    }
+}
