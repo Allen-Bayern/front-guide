@@ -31,7 +31,7 @@ ui-design.rp
 
 # parcel
 .cache
-dist
+# dist
 .parcel-cache
 
 # WebStorm
