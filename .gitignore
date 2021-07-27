@@ -36,3 +36,5 @@ dist
 
 # WebStorm
 .idea
+
+node_modules
